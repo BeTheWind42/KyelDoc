@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>KyelDoc &mdash; Documentation KyelDoc 0.0.1</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> KyelDoc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">KyelDoc</a></li>
+<li><a class="reference internal" href="#attributs-basiques">Attributs Basiques</a></li>
+<li><a class="reference internal" href="#les-sous-attributs">Les Sous-attributs</a><ul>
+<li><a class="reference internal" href="#les-sous-attributs-basiques">Les sous-attributs basiques</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">KyelDoc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>KyelDoc</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kyeldoc">
+<h1>KyelDoc<a class="headerlink" href="#kyeldoc" title="Lien permanent vers ce titre">¶</a></h1>
+</div>
+<div class="section" id="attributs-basiques">
+<h1>Attributs Basiques<a class="headerlink" href="#attributs-basiques" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="simple">
+<dt>Id:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">id='test'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Ici “test” est l’id de la carte.</p></li>
+<li><p><em>id</em> est un attribut obligatoire.</p></li>
+<li><p>Les mujuscule compte dans l’id.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Type:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">type='INFORMATIVE'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Il existe 4 types differents:</dt><dd><ul>
+<li><p><strong>INFORMATIVE</strong></p></li>
+<li><p><strong>YOUR_KINGDOM</strong></p></li>
+<li><p><strong>ENNEMY</strong></p></li>
+<li><p><strong>OTHERS_KINGDOMS</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><em>type</em> est un attribut obligatoire.</p></li>
+<li><p>le <em>type</em> doit être écrit en majuscule et sans faute de frappe.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Text Id:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">id='this'</span> <span class="pre">idText='otherid'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet de donné un id différent pour la traduction que <em>id</em>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Sprite Id:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">id='this'</span> <span class="pre">idSprite='otherid'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet aussi de donné un id différent mais pour l’image.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Next Card:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">nextCard='idOfNextCard'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet de désigné la prochaine carte quand on swipe la carte à Gauche ou à Droite</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Left Card:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">leftCard='idOfCardOnLeft'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet de désigné la prochaine carte quand on swipe à Gauge.</p></li>
+<li><p>Cet attribut n’est pas compatible avec <em>nextCard</em></p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Right Card:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">rightCard='idOfCardOnRight'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet de désigné la prochaine carte quand on swipe à Droite.</p></li>
+<li><p>Cet attribut n’est pas compatible avec <em>nextCard</em></p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Text Left:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">textLeft='traductionIdOfTextOnLeft'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet de choisir l’id de la traduction quand on tourne la carte vers la Gauche.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Text Right:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">textLeft='traductionIdOfTextOnRight'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Cet attribut permet de choisir l’id de la traduction quand on tourne la carte vers la Droite.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Weight:</dt><dd><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&lt;Card</span> <span class="pre">weight='10'</span> <span class="pre">/&gt;</span></code></dt><dd><ul class="simple">
+<li><p>Le poids est de base à 0.</p></li>
+<li><p>Cet attribut permet de changé par un valeur net le poids de la carte et donc la chance d’être pioché.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="les-sous-attributs">
+<h1>Les Sous-attributs<a class="headerlink" href="#les-sous-attributs" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Les sous-attribut sont à crée de cette maniere:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Card</span> <span class="n">attribut1</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="n">attribut2</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="o">...&gt;</span>
+        <span class="o">&lt;</span><span class="n">Nom_du_sous</span><span class="o">-</span><span class="n">attribut</span> <span class="n">attribut1_du_sous</span><span class="o">-</span><span class="n">attribut</span><span class="o">=</span><span class="s1">&#39;&#39;</span> <span class="o">...</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">Card</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="les-sous-attributs-basiques">
+<h2>Les sous-attributs basiques<a class="headerlink" href="#les-sous-attributs-basiques" title="Lien permanent vers ce titre">¶</a></h2>
+<dl>
+<dt>Gauge:</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Card</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">Gauge</span> <span class="n">army</span><span class="o">=</span><span class="s1">&#39;+10&#39;</span> <span class="n">food</span><span class="o">=</span><span class="s1">&#39;-10&#39;</span> <span class="n">money</span><span class="o">=</span><span class="s1">&#39;0&#39;</span> <span class="n">population</span><span class="o">=</span><span class="s1">&#39;0&#39;</span> <span class="n">life_bar</span><span class="o">=</span><span class="s1">&#39;-30&#39;</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;left&#39;</span> <span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="n">Card</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Mathias Boursier
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
