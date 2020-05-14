@@ -248,19 +248,27 @@
 <div class="section" id="les-sous-attributs">
 <h1>Les Sous-attributs<a class="headerlink" href="#les-sous-attributs" title="Lien permanent vers ce titre">¶</a></h1>
 <p>Les sous-attribut sont à crée de cette maniere:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Card</span> <span class="n">attribut1</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="n">attribut2</span><span class="o">=</span><span class="s1">&#39;...&#39;</span> <span class="o">...&gt;</span>
-        <span class="o">&lt;</span><span class="n">Nom_du_sous</span><span class="o">-</span><span class="n">attribut</span> <span class="n">attribut1_du_sous</span><span class="o">-</span><span class="n">attribut</span><span class="o">=</span><span class="s1">&#39;&#39;</span> <span class="o">...</span> <span class="o">/&gt;</span>
-<span class="o">&lt;/</span><span class="n">Card</span><span class="o">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>&lt;Card attribut1=&#39;...&#39; attribut2=&#39;...&#39; ...&gt;
+        &lt;Nom_du_sous-attribut attribut1_du_sous-attribut=&#39;&#39; ... /&gt;
+&lt;/Card&gt;
 </pre></div>
 </div>
 <div class="section" id="les-sous-attributs-basiques">
 <h2>Les sous-attributs basiques<a class="headerlink" href="#les-sous-attributs-basiques" title="Lien permanent vers ce titre">¶</a></h2>
 <dl>
-<dt>Gauge:</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Card</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">Gauge</span> <span class="n">army</span><span class="o">=</span><span class="s1">&#39;+10&#39;</span> <span class="n">food</span><span class="o">=</span><span class="s1">&#39;-10&#39;</span> <span class="n">money</span><span class="o">=</span><span class="s1">&#39;0&#39;</span> <span class="n">population</span><span class="o">=</span><span class="s1">&#39;0&#39;</span> <span class="n">life_bar</span><span class="o">=</span><span class="s1">&#39;-30&#39;</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;left&#39;</span> <span class="o">/&gt;</span>
-<span class="o">&lt;/</span><span class="n">Card</span><span class="o">&gt;</span>
+<dt>Gauge:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;Gauge</span> <span class="na">army=</span><span class="s">&#39;+10&#39;</span> <span class="na">food=</span><span class="s">&#39;-10&#39;</span> <span class="na">money=</span><span class="s">&#39;0&#39;</span> <span class="na">population=</span><span class="s">&#39;0&#39;</span> <span class="na">life_bar=</span><span class="s">&#39;-30&#39;</span> <span class="na">type=</span><span class="s">&#39;left&#39;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Card&gt;</span>
 </pre></div>
 </div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Cet attribut permet de modifié les ressources du joueur lorsque qu’il swipe</p></li>
+<li><p>Si l’attribut <em>type</em> a la valeur <em>left</em> il ne modifira les ressources que si on swipe à Gauche, et inversement si l’attribut a la valeur <em>right</em>.</p></li>
+<li><p>Si l’attribut <em>type</em> n’est pas utilisé alors la gauge s’appliquera sur les deux coté.</p></li>
+<li><p>Les attributs <em>army</em>, <em>food</em>, <em>money</em>, <em>population</em>, et <em>life_bar</em> sont obligatoire.</p></li>
+</ul>
+</div></blockquote>
 </dd>
 </dl>
 <div class="toctree-wrapper compound">

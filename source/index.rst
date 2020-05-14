@@ -83,6 +83,7 @@ Gauge:
 			<Gauge army='+10' food='-10' money='0' population='0' life_bar='-30' type='left' />
 		</Card>
 	..
+	
 	 - Cet attribut permet de modifié les ressources du joueur lorsque qu'il swipe
 	 - Si l'attribut *type* a la valeur *left* il ne modifira les ressources que si on swipe à Gauche, et inversement si l'attribut a la valeur *right*.
 	 - Si l'attribut *type* n'est pas utilisé alors la gauge s'appliquera sur les deux coté.
