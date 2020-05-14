@@ -66,7 +66,7 @@ Les Sous-attributs
 
 Les sous-attribut sont à crée de cette maniere:
 
-.. code-block::
+.. code-block:: xml
 	
 	<Card attribut1='...' attribut2='...' ...>
 		<Nom_du_sous-attribut attribut1_du_sous-attribut='' ... />
@@ -77,7 +77,7 @@ Les sous-attributs basiques
 ---------------------------
 
 Gauge:
-	.. code-block::
+	.. code-block:: xml
 		
 		<Card>
 			<Gauge army='+10' food='-10' money='0' population='0' life_bar='-30' type='left' />
