@@ -85,6 +85,7 @@
 <li><a class="reference internal" href="#attributs-basiques">Attributs Basiques</a></li>
 <li><a class="reference internal" href="#les-sous-attributs">Les Sous-attributs</a><ul>
 <li><a class="reference internal" href="#les-sous-attributs-basiques">Les sous-attributs basiques</a></li>
+<li><a class="reference internal" href="#tag-attributs">Tag Attributs</a></li>
 </ul>
 </li>
 </ul>
@@ -267,6 +268,62 @@
 <li><p>Si l’attribut <em>type</em> a la valeur <em>left</em> il ne modifira les ressources que si on swipe à Gauche, et inversement si l’attribut a la valeur <em>right</em>.</p></li>
 <li><p>Si l’attribut <em>type</em> n’est pas utilisé alors la gauge s’appliquera sur les deux coté.</p></li>
 <li><p>Les attributs <em>army</em>, <em>food</em>, <em>money</em>, <em>population</em>, et <em>life_bar</em> sont obligatoire.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>EndGame:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;EndGame</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Finit le jeu lorsque la carte est swipé</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>AddDelayedCard:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;AddDelayedCard</span> <span class="na">player=</span><span class="s">&#39;ennemy&#39;</span> <span class="na">turn=</span><span class="s">&#39;2&#39;</span> <span class="na">cardId=</span><span class="s">&#39;isCard&#39;</span> <span class="na">side=</span><span class="s">&#39;left&#39;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ajout une carte retardé de tour <em>turn</em> et d’id <em>cardId</em>.</p></li>
+<li><p>Seuls les attribut <em>turn</em> et <em>cardId</em> sont obligatoire.</p></li>
+<li><p>Si l’attribut <em>player</em> est a la valeur <strong>ennemy</strong> alors la carte retardé sera donné à l’adversaire.</p></li>
+<li><p>Si l’attribut <em>side</em> est à <strong>left</strong> alors la carte sera donné si on wipe a gauche, l’inverse si <em>side</em> est à <strong>right</strong>.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="tag-attributs">
+<h2>Tag Attributs<a class="headerlink" href="#tag-attributs" title="Lien permanent vers ce titre">¶</a></h2>
+<dl>
+<dt>AddTag:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;AddTag</span> <span class="na">name=</span><span class="s">&#39;loan&#39;</span> <span class="na">side=</span><span class="s">&#39;left&#39;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ajout le tag du nom de la valeur de <em>name</em>.</p></li>
+<li><p>Seul l’attribut <em>name</em> est obligatoire.</p></li>
+<li><p>Si l’attribut <em>side</em> est à <strong>left</strong> alors la carte sera donné si on wipe a gauche, l’inverse si <em>side</em> est à <strong>right</strong>.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>DelTag:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;DelTag</span> <span class="na">name=</span><span class="s">&#39;loan&#39;</span> <span class="na">side=</span><span class="s">&#39;right&#39;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Supprime le tag de valeur <em>loan</em> si il y est.</p></li>
+<li><p>Seul l’attribut <em>name</em> est obligatoire.</p></li>
+<li><p>Si l’attribut <em>side</em> est à <strong>left</strong> alors la carte sera donné si on wipe a gauche, l’inverse si <em>side</em> est à <strong>right</strong>.</p></li>
 </ul>
 </div></blockquote>
 </dd>

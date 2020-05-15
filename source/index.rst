@@ -71,6 +71,8 @@ Les sous-attribut sont à crée de cette maniere:
 	<Card attribut1='...' attribut2='...' ...>
 		<Nom_du_sous-attribut attribut1_du_sous-attribut='' ... />
 	</Card>
+..
+
 
 
 Les sous-attributs basiques
@@ -88,6 +90,57 @@ Gauge:
 	 - Si l'attribut *type* a la valeur *left* il ne modifira les ressources que si on swipe à Gauche, et inversement si l'attribut a la valeur *right*.
 	 - Si l'attribut *type* n'est pas utilisé alors la gauge s'appliquera sur les deux coté.
 	 - Les attributs *army*, *food*, *money*, *population*, et *life_bar* sont obligatoire.
+
+EndGame:
+	.. code-block:: xml
+		
+		<Card>
+			<EndGame />
+		</Card>
+	..
+	
+	 - Finit le jeu lorsque la carte est swipé
+
+AddDelayedCard:
+	.. code-block:: xml
+		
+		<Card>
+			<AddDelayedCard player='ennemy' turn='2' cardId='isCard' side='left' />
+		</Card>
+	..
+	
+	 - Ajout une carte retardé de tour *turn* et d'id *cardId*.
+	 - Seuls les attribut *turn* et *cardId* sont obligatoire.
+	 - Si l'attribut *player* est a la valeur **ennemy** alors la carte retardé sera donné à l'adversaire.
+	 - Si l'attribut *side* est à **left** alors la carte sera donné si on wipe a gauche, l'inverse si *side* est à **right**.
+
+
+Tag Attributs
+-------------
+
+AddTag:
+	.. code-block:: xml
+	
+		<Card>
+			<AddTag name='loan' side='left' />
+		</Card>
+	..
+	
+	 - Ajout le tag du nom de la valeur de *name*.
+	 - Seul l'attribut *name* est obligatoire.
+	 - Si l'attribut *side* est à **left** alors la carte sera donné si on wipe a gauche, l'inverse si *side* est à **right**.
+
+DelTag:
+	.. code-block:: xml
+	
+		<Card>
+			<DelTag name='loan' side='right' />
+		</Card>
+	..
+	
+	 - Supprime le tag de valeur *loan* si il y est.
+	 - Seul l'attribut *name* est obligatoire.
+	 - Si l'attribut *side* est à **left** alors la carte sera donné si on wipe a gauche, l'inverse si *side* est à **right**.
 
 .. toctree::
    :maxdepth: 2
