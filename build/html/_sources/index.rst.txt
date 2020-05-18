@@ -142,6 +142,47 @@ DelTag:
 	 - Seul l'attribut *name* est obligatoire.
 	 - Si l'attribut *side* est à **left** alors la carte sera donné si on wipe a gauche, l'inverse si *side* est à **right**.
 
+
+Weight Attributs
+----------------
+
+Les attribut de poids modifie le poids d'une carte.
+
+.. important:: Les attributs de poids ne sont pas cumulable.
+
+TagWeight:
+	.. code-block:: xml
+		
+		<Card>
+			<TagWeight name="loan" value="100" notValue="1" />
+		<Card>
+	..
+	
+	 - *TagWeight* permet de modifier le poids de la carte si le joueur a le tag de valeur *name*.
+	 - Si le joueur a le tag alors le poids vaut *value* sinon il vaut *notValue*.
+	 - Seul l'attribut *name* est obligatoire.
+	 - Si l'attribut *value* n'est pas spécifié alors sa valeur est à 100.
+	 - Si l'attribut *notValue* n'est pas spécifié alors sa valeur est à 0.
+
+GaugeWeight:
+	.. code-block:: xml
+		
+		<Card>
+			<GaugeWeight army="50" poidsArmy="1" population="20" poidsPopulation="1" maxPoids="100" />
+		</Card>
+	..
+	
+	 - *GaugeWeight* augement le poids de la carte si le joueur ce raproche des valeur.
+	 - Le poids permet de faire varié l'importance du ressouce, exemple: *poidsArmy* est à 2 et *poidsPopulation* à 1 alors l'armée importe plus.
+	 - De base tous les poids sont à 0.
+	 - List des attributs : *army*, *sharpArmy*, *rangeArmy*, *poidsArmy*, *food*, *sharpFood*, *rangeFood*, *poidsFood*, *money*, *sharpMoney*, *rangeMoney*, *poidsMoney*, *population*, *sharpPopulation*, *rangePopulation*, *poidsPopulation*, *maxPoids*.
+	 - Aucun attribut est obligatoire.
+	 - La valeur de base de *sharp...* est **1**
+	 - La valeur de base de *range...* est **1.5**
+	 - La valeur de base de *maxPoids* est **100**
+	 - Le *maxPoids* est la valeur qu'aura le poids si il correspond exactement à la gauge du joueur.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

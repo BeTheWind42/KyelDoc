@@ -86,6 +86,7 @@
 <li><a class="reference internal" href="#les-sous-attributs">Les Sous-attributs</a><ul>
 <li><a class="reference internal" href="#les-sous-attributs-basiques">Les sous-attributs basiques</a></li>
 <li><a class="reference internal" href="#tag-attributs">Tag Attributs</a></li>
+<li><a class="reference internal" href="#weight-attributs">Weight Attributs</a></li>
 </ul>
 </li>
 </ul>
@@ -324,6 +325,50 @@
 <li><p>Supprime le tag de valeur <em>loan</em> si il y est.</p></li>
 <li><p>Seul l’attribut <em>name</em> est obligatoire.</p></li>
 <li><p>Si l’attribut <em>side</em> est à <strong>left</strong> alors la carte sera donné si on wipe a gauche, l’inverse si <em>side</em> est à <strong>right</strong>.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="weight-attributs">
+<h2>Weight Attributs<a class="headerlink" href="#weight-attributs" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les attribut de poids modifie le poids d’une carte.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Les attributs de poids ne sont pas cumulable.</p>
+</div>
+<dl>
+<dt>TagWeight:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;TagWeight</span> <span class="na">name=</span><span class="s">&quot;loan&quot;</span> <span class="na">value=</span><span class="s">&quot;100&quot;</span> <span class="na">notValue=</span><span class="s">&quot;1&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>TagWeight</em> permet de modifier le poids de la carte si le joueur a le tag de valeur <em>name</em>.</p></li>
+<li><p>Si le joueur a le tag alors le poids vaut <em>value</em> sinon il vaut <em>notValue</em>.</p></li>
+<li><p>Seul l’attribut <em>name</em> est obligatoire.</p></li>
+<li><p>Si l’attribut <em>value</em> n’est pas spécifié alors sa valeur est à 100.</p></li>
+<li><p>Si l’attribut <em>notValue</em> n’est pas spécifié alors sa valeur est à 0.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>GaugeWeight:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;GaugeWeight</span> <span class="na">army=</span><span class="s">&quot;50&quot;</span> <span class="na">poidsArmy=</span><span class="s">&quot;1&quot;</span> <span class="na">population=</span><span class="s">&quot;20&quot;</span> <span class="na">poidsPopulation=</span><span class="s">&quot;1&quot;</span> <span class="na">maxPoids=</span><span class="s">&quot;100&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>GaugeWeight</em> augement le poids de la carte si le joueur ce raproche des valeur.</p></li>
+<li><p>Le poids permet de faire varié l’importance du ressouce, exemple: <em>poidsArmy</em> est à 2 et <em>poidsPopulation</em> à 1 alors l’armée importe plus.</p></li>
+<li><p>De base tous les poids sont à 0.</p></li>
+<li><p>List des attributs : <em>army</em>, <em>sharpArmy</em>, <em>rangeArmy</em>, <em>poidsArmy</em>, <em>food</em>, <em>sharpFood</em>, <em>rangeFood</em>, <em>poidsFood</em>, <em>money</em>, <em>sharpMoney</em>, <em>rangeMoney</em>, <em>poidsMoney</em>, <em>population</em>, <em>sharpPopulation</em>, <em>rangePopulation</em>, <em>poidsPopulation</em>, <em>maxPoids</em>.</p></li>
+<li><p>Aucun attribut est obligatoire.</p></li>
+<li><p>La valeur de base de <em>sharp…</em> est <strong>1</strong></p></li>
+<li><p>La valeur de base de <em>range…</em> est <strong>1.5</strong></p></li>
+<li><p>La valeur de base de <em>maxPoids</em> est <strong>100</strong></p></li>
+<li><p>Le <em>maxPoids</em> est la valeur qu’aura le poids si il correspond exactement à la gauge du joueur.</p></li>
 </ul>
 </div></blockquote>
 </dd>
