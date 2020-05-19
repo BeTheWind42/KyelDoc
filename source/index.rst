@@ -89,7 +89,8 @@ Gauge:
 	 - Cet attribut permet de modifié les ressources du joueur lorsque qu'il swipe
 	 - Si l'attribut *type* a la valeur *left* il ne modifira les ressources que si on swipe à Gauche, et inversement si l'attribut a la valeur *right*.
 	 - Si l'attribut *type* n'est pas utilisé alors la gauge s'appliquera sur les deux coté.
-	 - Les attributs *army*, *food*, *money*, *population*, et *life_bar* sont obligatoire.
+	 - Les attributs *army*, *food*, *money*, *population*, et *life_bar* ont comme valeur par default 0.
+	 - Aucun attribut est obligatoire.
 
 EndGame:
 	.. code-block:: xml
@@ -148,7 +149,7 @@ Weight Attributs
 
 Les attribut de poids modifie le poids d'une carte.
 
-.. important:: Les attributs de poids ne sont pas cumulable.
+.. important:: Les sous-attributs de poids sont cumulable mais ecrase l'attribut poids.
 
 TagWeight:
 	.. code-block:: xml

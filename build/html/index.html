@@ -268,7 +268,8 @@
 <li><p>Cet attribut permet de modifié les ressources du joueur lorsque qu’il swipe</p></li>
 <li><p>Si l’attribut <em>type</em> a la valeur <em>left</em> il ne modifira les ressources que si on swipe à Gauche, et inversement si l’attribut a la valeur <em>right</em>.</p></li>
 <li><p>Si l’attribut <em>type</em> n’est pas utilisé alors la gauge s’appliquera sur les deux coté.</p></li>
-<li><p>Les attributs <em>army</em>, <em>food</em>, <em>money</em>, <em>population</em>, et <em>life_bar</em> sont obligatoire.</p></li>
+<li><p>Les attributs <em>army</em>, <em>food</em>, <em>money</em>, <em>population</em>, et <em>life_bar</em> ont comme valeur par default 0.</p></li>
+<li><p>Aucun attribut est obligatoire.</p></li>
 </ul>
 </div></blockquote>
 </dd>
@@ -335,7 +336,7 @@
 <p>Les attribut de poids modifie le poids d’une carte.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Les attributs de poids ne sont pas cumulable.</p>
+<p>Les sous-attributs de poids sont cumulable mais ecrase l’attribut poids.</p>
 </div>
 <dl>
 <dt>TagWeight:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
