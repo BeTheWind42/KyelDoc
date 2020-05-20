@@ -184,6 +184,21 @@ GaugeWeight:
 	 - Le *maxPoids* est la valeur qu'aura le poids si il correspond exactement à la gauge du joueur.
 
 
+Random Attributs
+----------------
+
+RandomNextCard:
+	.. code-block:: xml
+		
+		<Card>
+			<RandomNextCard prob="0.7" idCard1="Card1" idCard2="Card2" side="left" />
+		<Card>
+	..
+	
+	 - Cette attribut permet de choisir aléatoirement entre 2 cartes.
+	 - Dans l'exemple ci-dessus la carte définie par l'attribut *idCard1* de valeur *Card1* a **0.7**(70%) de chance et donc **0.3**(30%) de chance d'avoir *idCard2*.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

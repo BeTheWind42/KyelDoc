@@ -87,6 +87,7 @@
 <li><a class="reference internal" href="#les-sous-attributs-basiques">Les sous-attributs basiques</a></li>
 <li><a class="reference internal" href="#tag-attributs">Tag Attributs</a></li>
 <li><a class="reference internal" href="#weight-attributs">Weight Attributs</a></li>
+<li><a class="reference internal" href="#random-attributs">Random Attributs</a></li>
 </ul>
 </li>
 </ul>
@@ -370,6 +371,23 @@
 <li><p>La valeur de base de <em>range…</em> est <strong>1.5</strong></p></li>
 <li><p>La valeur de base de <em>maxPoids</em> est <strong>100</strong></p></li>
 <li><p>Le <em>maxPoids</em> est la valeur qu’aura le poids si il correspond exactement à la gauge du joueur.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="random-attributs">
+<h2>Random Attributs<a class="headerlink" href="#random-attributs" title="Lien permanent vers ce titre">¶</a></h2>
+<dl>
+<dt>RandomNextCard:</dt><dd><div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Card&gt;</span>
+        <span class="nt">&lt;RandomNextCard</span> <span class="na">prob=</span><span class="s">&quot;0.7&quot;</span> <span class="na">idCard1=</span><span class="s">&quot;Card1&quot;</span> <span class="na">idCard2=</span><span class="s">&quot;Card2&quot;</span> <span class="na">side=</span><span class="s">&quot;left&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;Card&gt;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Cette attribut permet de choisir aléatoirement entre 2 cartes.</p></li>
+<li><p>Dans l’exemple ci-dessus la carte définie par l’attribut <em>idCard1</em> de valeur <em>Card1</em> a <a href="#id1"><span class="problematic" id="id2">**</span></a>0.7**(70%) de chance et donc <a href="#id3"><span class="problematic" id="id4">**</span></a>0.3**(30%) de chance d’avoir <em>idCard2</em>.</p></li>
 </ul>
 </div></blockquote>
 </dd>
