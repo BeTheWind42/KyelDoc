@@ -198,6 +198,19 @@ RandomNextCard:
 	 - Cette attribut permet de choisir aléatoirement entre 2 cartes.
 	 - Dans l'exemple ci-dessus la carte définie par l'attribut *idCard1* de valeur *Card1* a **0.7**(70%) de chance et donc **0.3**(30%) de chance d'avoir *idCard2*.
 
+AddRandomDelayedCard:
+	.. code-block:: xml
+		<Card>
+			<AddRandomDelayedCard prob="0.7" idCard1="Card1" idCard2="Card2" turn="1" side="left" />
+		<Card>
+	..
+	
+	 - Cette attribut permet de choisir aléatoirement entre 2 cartes et d'ajouter la carte choisi dnas un certain nombre de tour.
+	 - *prob* correspond à la probabilité que ce soit *idCard1* qui soit choisie. Ainsi *idCard2* à 30% de chance d'être choisie.
+	 - *idCard1* et *idCard2* sont les identifiants des deux cartes.
+	 - *turn* correspond au nombre de tour séparant le tour actuel du moment où le joueur a une chance de piocher la carte choisie aléatoirement.
+	 - *side* permet de définir si l'action doit être éxécuté lorsque le joueur swipe à droit (*right*) ou à gauche (*left*).
+
 
 .. toctree::
    :maxdepth: 2
